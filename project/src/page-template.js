@@ -1,9 +1,8 @@
-const generatePage = (userName, github) => {
-    let userName = 'Emilio';
-    let github = 'EJCAlderon';
+module.exports = (name, github) => {
     return `
     <!DOCTYPE html> 
     <html lang="en"> 
+    
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +17,5 @@ const generatePage = (userName, github) => {
     </html>
     `;
 };
-fs.writeFile('index.html', generatePage(name, github), err => {
-    if (err) throw err;
-    console.log('Portfolio complete! Checkout index.html to see the output!');
-    
-});
 
-module.exports = generatePage;
+
